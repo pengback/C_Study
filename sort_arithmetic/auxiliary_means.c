@@ -18,7 +18,7 @@ int *input_sort_array(int** length)
     int value[BASE_SIEZ];
     char swap_array[BASE_SIEZ];
     char *swap_p = swap_array;
-    printf("请输入等待排序的数组（整数，数值间用空格分隔）：\n");
+    printf(L"请输入等待排序的数组（整数，数值间用空格分隔）：\n");
     int len = 0;
     int *len_p = &len;
     while(1)
@@ -44,7 +44,7 @@ int *input_sort_array(int** length)
         }
     }
     printf("输入数值个数：%d\n", len);
-    int (*value_p)[len];
+    int (*value_p)[];
     value_p = &value;
     int i = 0;
     int *q = *value_p;
@@ -69,6 +69,7 @@ void output_sort_array(int* p, int* len)
         printf("%d ", (int) *(p + i));
     }
     printf("\n");
+	getchar();
 }
 
 void exchangeValue(int** a, int** b)

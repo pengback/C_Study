@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "auxiliary_means.h"
 #include "bubble_sort.h"
+#include <locale.h>
+
 
 int main()
 {
