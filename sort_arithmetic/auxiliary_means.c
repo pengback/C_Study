@@ -44,7 +44,7 @@ int *input_sort_array(int** length)
         }
     }
     printf("输入数值个数：%d\n", len);
-    int (*value_p)[];
+    int (*value_p)[len];
     value_p = &value;
     int i = 0;
     int *q = *value_p;
