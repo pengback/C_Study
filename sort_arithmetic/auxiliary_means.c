@@ -18,7 +18,7 @@ int *input_sort_array(int** length)
     int value[BASE_SIEZ];
     char swap_array[BASE_SIEZ];
     char *swap_p = swap_array;
-    printf(L"请输入等待排序的数组（整数，数值间用空格分隔）：\n");
+    printf("请输入等待排序的数组（整数，数值间用空格分隔）：\n");
     int len = 0;
     int *len_p = &len;
     while(1)
